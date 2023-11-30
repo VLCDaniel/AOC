@@ -14,7 +14,7 @@ fn get_score(round: &str) -> i32 {
             match me {
                 'X' => { 1 + 0 },
                 'Y' => { 2 + 3 },
-                'Z'=> { 3 + 6 },
+                'Z' => { 3 + 6 },
                 _ => panic!(),
             }
         },
