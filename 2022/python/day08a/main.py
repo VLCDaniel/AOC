@@ -2,16 +2,10 @@ import os
 
 f = open(os.path.join(os.path.dirname(__file__), 'input.txt'), "r")
 input_data = f.read().splitlines()
-sum = 0
-line_size = len(input_data[0])
-border_trees = 2 * len(input_data) - 4 + 2 * line_size
-
-
 
 M = [[c for c in line] for line in input_data]
 R = len(M)
 C = len(M[0])
-sum = border_trees
 sum = 2 * R + 2 * C - 4
 
 def check_visibility_rec(line, col, el, dir):    
