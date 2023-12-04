@@ -34,6 +34,4 @@ message = ""
 for stack in stacks:
     message += stack[-1]
 print(message)
-
-sum = 0
 f.close()
